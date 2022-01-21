@@ -1,0 +1,144 @@
+body{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(225, 100%, 94%);
+}
+
+div{
+    border: 0px solid black;
+}
+
+@font-face {
+    font-family: "RedHat";
+    src: url("font/static/RedHatDisplay-Black.ttf");
+    }
+
+.main-container{
+    position: absolute;
+    top: 40%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 450px;
+    border: 0px solid black;
+    border-radius: 20px;
+    background-color: hsl(225, 100%, 98%);
+    box-shadow: 0px 1px 50px hsl(224, 23%, 55%);
+}
+
+.hero-container:nth-child(1){
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 450px;
+}
+
+.title{
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: "RedHat";
+    font-size: 28px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+
+.dsc-container{
+    margin: auto;
+    margin-top: 0;
+    width: 300px;
+}
+
+.plan-container{
+    display: grid;
+    grid-template-areas: 
+    "img dsc1 dsc1 dsc1 it3"
+    "img dsc2 dsc2 dsc2 it3";
+    margin: auto;
+    padding-left: 50px;
+    width: 350px;
+}
+
+.sub-icon-msc-container{
+    width: 55px;
+    grid-area: img;
+}
+
+.plan-dsc{
+    padding-top: 0px;
+    position: relative;
+    left: -18px;
+}
+#it1{
+    font-family: "RedHat";
+    grid-area: dsc1;
+    color: hsl(223, 47%, 23%);
+}
+#it2{
+    font-family: "Red Hat Display";
+    grid-area: dsc2;
+    color: hsl(224, 23%, 55%);
+    font-weight: 300;
+}
+
+#it3{
+    font-family: "Red Hat Display";
+    padding-top: 3px;
+    position: relative;
+    left: -40px;
+    padding-top: 15px;
+    text-align: center;
+    vertical-align: bottom;
+    grid-area: it3;
+    color: hsl(245, 75%, 52%);
+    font-weight: 600;
+    text-decoration: underline;
+}
+#it3:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: hsl(245, 68%, 62%);
+}
+.description{
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    font-family: "Red Hat Display";
+    line-height: 1.6;
+}
+
+.btn-pay-container{
+    text-align: center;
+}
+
+.btn-pay{
+    text-align: center;
+    width: 350px;
+    height: 45px;
+    font-family: "Red Hat Display";
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    color: aliceblue;
+    background-color: hsl(245, 75%, 52%);
+    border-color:hsla(228, 100%, 98%, 0);
+    border-radius: 5px;
+    box-shadow: 0px 5px 8px hsl(224, 23%, 55%);
+}
+.btn-pay:hover{
+    background-color: hsl(245, 68%, 62%);
+    cursor: pointer;
+}
+
+.txt-cancel{
+    text-align: center;
+}
+
+.cancel-order{
+    font-family: "RedHat";
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+.cancel-order:hover{
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+}
